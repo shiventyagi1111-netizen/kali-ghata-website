@@ -9,9 +9,12 @@ Included:
 - Premium editorial restaurant layout
 - All menu items/prices from the five supplied menu photographs
 - Responsive mobile design
-- Demo order/cart interface
+- Menu-only experience with prices and category filtering
 - No owner contact details yet
 
 IMPORTANT:
 The food photos are temporary representative imagery. Replace them with Kali Ghata's own food photography before the final client launch, especially to ensure the dishes shown match the actual restaurant.
 Address, phone, WhatsApp, hours and reservations are intentionally omitted for now.
+
+
+This version intentionally does not include online ordering, checkout, payments, or a backend. It is designed as a premium digital menu/showcase website.
