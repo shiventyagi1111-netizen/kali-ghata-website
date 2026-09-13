@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Kali Ghata — Pure Desi Ghee Sweets, chaat and restaurant favourites.">
+<title>Kali Ghata — Pure Desi Ghee Sweets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announcement">PURE DESI GHEE SWEETS <span>✦</span> CHAAT <span>✦</span> RESTAURANT <span>✦</span> FAMILY DINING</div>
+
+<header class="nav">
+  <a href="#home" class="brand"><img src="assets/kali-ghata-logo.jpg" alt="Kali Ghata"><span>KALI GHATA<small>PURE DESI GHEE SWEETS</small></span></a>
+  <nav id="desktopNav"><a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#visit">Experience</a></nav>
+  <button class="nav-order" onclick="openCart()">Order <b id="count">0</b></button>
+  <button class="hamb" onclick="toggleNav()">☰</button>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy reveal">
+    <div class="kicker"><span></span> A TASTE OF INDIA, REFINED</div>
+    <h1>Old-school soul.<br><em>New-school indulgence.</em></h1>
+    <p>From a burst of tangy chaat to pure desi ghee mithai, Kali Ghata brings the sweet shop and the dining table together.</p>
+    <div class="hero-actions"><a class="btn red" href="#menu">Discover the Menu <span>→</span></a><a class="text-link" href="#story">Our story <span>↗</span></a></div>
+    <div class="hero-meta"><div><strong>87+</strong><span>Menu favourites</span></div><i></i><div><strong>100%</strong><span>Desi spirit</span></div><i></i><div><strong>✦</strong><span>Made to crave</span></div></div>
+  </div>
+  <div class="hero-art reveal delay">
+    <div class="hero-image-wrap"><img src="https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1200,h_900/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/12/30/6b9275c6-066f-4981-a2d3-bd40d5a5e8b8_image3885827cc0d0114158a1be3143c128dbe7.JPG" alt="Indian chaat platter"></div>
+    <div class="gold-disc"></div>
+    <div class="hero-card"><span>KHATTA • MEETHA • TEZ</span><strong>Desi<br>Chaat</strong><small>Freshly plated favourites</small></div>
+    <div class="floating-spice">✦</div>
+  </div>
+</section>
+
+<section class="marquee"><div>RAJ KACHOURI <span>✦</span> GOL GAPPA <span>✦</span> FALUDA <span>✦</span> PLATTERS <span>✦</span> SUNDAES <span>✦</span> FRESH MITHAI <span>✦</span> RAJ KACHOURI <span>✦</span> GOL GAPPA <span>✦</span></div></section>
+
+<section class="signature-section">
+  <div class="section-intro reveal"><p class="eyebrow">THE KALI GHATA TABLE</p><h2>Three moods.<br><em>One unforgettable table.</em></h2><p>A modern presentation for timeless Indian favourites — built around the menu you supplied.</p></div>
+  <div class="feature-grid">
+    <article class="feature-card tall reveal">
+      <img src="https://b.zmtcdn.com/data/pictures/chains/1/22510031/1769766038c0fe6dfb-f8b1-425d-b437-b9dd5c492202.jpeg" alt="Indian sweets platter">
+      <div class="shade"></div><div class="feature-copy"><span>01 / MITHAI</span><h3>Sweet<br>Traditions</h3><p>Classic Indian mithai, crafted for gifting and celebrations.</p><a href="#menu" onclick="setCat('All')">Explore menu →</a></div>
+    </article>
+    <article class="feature-card reveal">
+      <img src="https://i.pinimg.com/736x/3a/f6/20/3af6206fb860ea5219c574f195a29694.jpg" alt="Indian paneer starter">
+      <div class="shade"></div><div class="feature-copy"><span>02 / RESTAURANT</span><h3>Plates with<br>character</h3><p>Platters, sizzlers and restaurant favourites.</p><a href="#menu" onclick="setCat('Platters')">View platters →</a></div>
+    </article>
+    <article class="feature-card reveal">
+      <img src="https://www.akshayglobalcuisine.com/images/falooda.png" alt="Indian falooda dessert">
+      <div class="shade"></div><div class="feature-copy"><span>03 / DESSERTS</span><h3>Finish on<br>a high</h3><p>Faluda, shakes, lassi and indulgent sundaes.</p><a href="#menu" onclick="setCat('Sundaes')">See desserts →</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="menu-section" id="menu">
+  <div class="menu-head reveal"><div><p class="eyebrow">THE MENU CARD, REIMAGINED</p><h2>Pick your craving.</h2></div><p>Every item and price below comes from the menu photographs you supplied. GST is extra where the original menu states it.</p></div>
+  <div class="tabs" id="tabs"></div>
+  <div class="menu-grid" id="grid"></div>
+</section>
+
+<section class="quote-band"><div class="quote-mark">“</div><blockquote>Good food should feel familiar.<br><em>Great food should feel like a memory.</em></blockquote><div class="quote-line"></div><p>KALI GHATA</p></section>
+
+<section class="story" id="story">
+  <div class="story-photo reveal"><img src="https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1200,h_900/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/12/30/6b9275c6-066f-4981-a2d3-bd40d5a5e8b8_image3885827cc0d0114158a1be3143c128dbe7.JPG" alt="Indian chaat spread"><span>THE DESI TABLE</span></div>
+  <div class="story-copy reveal"><p class="eyebrow">OUR POINT OF VIEW</p><h2>A sweet shop.<br>A restaurant.<br><em>A little bit of India.</em></h2><p>Kali Ghata is imagined as a place where the quick chaat stop can turn into a family meal, where coffee follows dessert, and where a box of sweets can become part of a celebration.</p><p>This premium website is the first presentation layer. Once the owner supplies the final sweets list, address, phone and official photos, those can be dropped straight into this design.</p><div class="signature">Kali Ghata <span>✦</span></div></div>
+</section>
+
+<section class="experience" id="visit">
+  <div class="experience-copy"><p class="eyebrow">YOUR NEXT VISIT</p><h2>Save room<br>for something sweet.</h2><p>Owner contact details are intentionally not shown yet. We'll add the official address, WhatsApp, hours and reservation flow later.</p></div>
+  <div class="experience-panel"><div class="panel-ring">KG</div><div><strong>Coming next</strong><p>Official contact details<br>Table reservations<br>WhatsApp ordering<br>Real Kali Ghata food photography</p></div></div>
+</section>
+</main>
+
+<footer><div class="brand"><img src="assets/kali-ghata-logo.jpg" alt=""><span>KALI GHATA<small>PURE DESI GHEE SWEETS</small></span></div><p>Premium website concept • 2026</p></footer>
+
+<div class="overlay" id="overlay" onclick="closeCart(event)"><aside class="cart-panel"><button class="close" onclick="closeCart()">×</button><p class="eyebrow">YOUR SELECTION</p><h2>Your Order</h2><div id="items"></div><div class="total"><span>Total</span><strong id="total">₹0</strong></div><button class="btn red full" onclick="checkout()">Continue</button></aside></div>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body></html>
